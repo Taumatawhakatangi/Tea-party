@@ -1,0 +1,46 @@
+.subscribe {
+	padding: 100px 0 200px;
+	@media (max-width: 1200px) {
+		padding-top: calc(50px + (100 - 50) * ((100vw - 320px) / (1200 - 320)));
+  		padding-bottom: calc(100px + (200 - 100) * ((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+.subscribe-form {
+	padding: 70px 110px 117px 110px;
+	background: $color-6;
+	&__title {
+		font-family: Ubuntu;
+		font-weight: 500;
+		font-size: 40px;
+		@media (max-width: 1200px) {
+  			font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1200 - 320)));
+		}	
+		margin-bottom: 30px;
+	}
+	&__info {
+		font-family: Arial;
+		font-weight: 400;
+		font-size: 25px;
+		@media (max-width: 1200px) {
+  			font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1200 - 320)));
+		}
+		margin-bottom: 51px;
+	}
+	&__input {
+		font-family: Arial;
+		font-weight: 400;
+		font-size: 20px;
+		color: #000;
+		max-width: 400px;
+		background: #fff;
+		padding: 20px 25px 20px 25px;
+		margin-right: 40px;
+		&::placeholder {
+			color: #000;
+		}
+	}
+	&__btn {
+		display: inline-block;
+	}
+}

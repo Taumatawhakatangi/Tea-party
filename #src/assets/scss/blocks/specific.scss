@@ -1,0 +1,140 @@
+.animated {
+	opacity: 0;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+	min-height: 100vh;
+	min-width: 320px;
+}
+
+.footer {
+	margin-top: auto;
+}
+
+.tel {
+	white-space: nowrap;
+}
+
+.section-title {
+	z-index: 100;
+	margin-bottom: 70px;
+	@media (max-width: 1200px) {
+  		margin-bottom: calc(50px + (70 - 50) * ((100vw - 320px) / (1200 - 320)));
+	}
+	font-size: 50px;
+	@media (max-width: 1200px) {
+  		font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (1200 - 320)));
+	}	
+	font-family: Ubuntu;
+	font-weight: 700;
+	text-align: center;
+	position: relative;
+	text-shadow: 4px 4px 3px $color-3;
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 30px;
+		width: 280px;
+		height: 1px;
+		background-color: $color-7;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+p {
+	line-height: 1.16;
+}
+
+body {
+	font: 400 25px 'Arial', sans-serif;
+	color: $color-1; 
+	font-size: 25px;
+	@media (max-width: 1200px) {
+		font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+input:focus {
+	border: 1px solid $color-1;
+}
+
+a {
+	color: $color-1;
+	transition: all .4s ease;
+}
+
+::selection {
+	background: $color-1;
+	color: #fff;
+}
+
+.container {
+	width: 100%;
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;	
+	position: relative;
+}
+
+.btn {
+	font-weight: 900;
+	width: 100%;
+	max-width: 180px;
+	text-align: center;
+	display: block;
+	padding: 20px 14px;
+	text-decoration: none;
+	background: $color-4;
+	color: #fff;
+	letter-spacing: 0.02em;
+	transition: all .5s ease;
+	font-size: 16px;
+	border: 1px solid transparent;
+	font-weight: 900;
+	white-space: nowrap;
+}
+
+.btn:hover {
+	background: $color-4-h;
+	border: 1px solid transparent;
+}
+
+.btn:active {
+	background: $color-4-a;
+}
+
+.transparent-btn {
+	font-family: Arial;
+	font-weight: 900;
+	font-size: 16px;
+	width: 100%;
+	text-align: center;
+	display: block;
+	padding: 20px 14px;
+	max-width: 180px;
+	margin: 0 auto;
+	color: $color-4;
+	letter-spacing: 0.02em;
+	background: transparent;
+	border: 1px solid $color-6;
+	transition: all .5s ease;
+}
+
+.transparent-btn:hover {
+	background: $color-t-h;
+	color: #fff;
+	border: 1px solid $color-t-h;
+}
+
+.transparent-btn:active {
+	background: #8A9A5A;
+	border: 1px solid $color-t-a;
+}

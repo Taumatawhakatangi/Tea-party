@@ -1,0 +1,60 @@
+.burger {
+	display: none;
+	width: 43px;
+	height: 32px;
+	margin-right: 50px;
+}
+
+.burger span {
+	display: block;
+	width: 43px;
+	height: 5px;
+	background-color: $color-4;
+	border-radius: 13px;
+	margin-bottom: 5px;
+}
+
+.burger span:not(:last-of-type) {
+	margin-bottom: 8px;
+}
+
+.burger__middle {
+	display: block;
+	width: 35px;
+	height: 5px;
+	background-color: #333;
+}
+
+.burger__top {
+	display: block; 
+	width: 35px;
+	height: 5px;
+	background-color: #333;
+}
+
+.burger__bottom {
+	display: block;
+	width: 35px;
+	height: 5px;
+	background-color: #333;
+}
+
+.burger__middle,
+.burger__top,
+.burger__bottom {
+	transition: 0.4s;
+}
+
+.burger__middle.change {
+	opacity: 0;
+}
+
+.burger__top.change {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-10px, 9px);
+}
+
+.burger__bottom.change {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}

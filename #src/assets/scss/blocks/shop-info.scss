@@ -1,0 +1,117 @@
+.shop-info {
+	padding: 94px 0 70px;
+	@media (max-width: 1200px) {
+		padding-top: calc(45px + (94 - 45) * ((100vw - 320px) / (1200 - 320)));
+  		padding-bottom: calc(40px + (70 - 40) * ((100vw - 320px) / (1200 - 320)));
+	}
+}
+.shop-info__paragraph:not(:last-of-type) {
+	margin-bottom: 64px;
+	@media (max-width: 1200px) {
+  		margin-bottom: calc(35px + (64 - 35) * ((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+.shop-info__title, 
+.manufacturers__title {
+	margin-bottom: 30px;
+	font-family: Ubuntu;
+	font-size: 30px;
+	@media (max-width: 1200px) {
+  		font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1200 - 320)));
+	}	
+	font-weight: 500;
+}
+
+h5.manufacturers__title {
+	margin: 0;
+	font-family: Arial;
+	font-weight: 900;
+	font-size: 25px;
+	@media (max-width: 1200px) {
+  		font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+	}	
+}
+
+.manufacturers__list {
+	padding-left: 40px;
+	&:last-child {
+		margin-bottom: 70px;
+		@media (max-width: 1200px) {
+  			margin-bottom: calc(40px + (70 - 40) * ((100vw - 320px) / (1200 - 320)));
+		}
+	}
+}
+
+.manufacturers__paragraph {
+	margin: 40px 0;
+}
+
+h4.benefit__title {
+	font-family: Ubuntu;
+	font-weight: 500;
+	font-size: 30px;
+	@media (max-width: 1200px) {
+  		font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1200 - 320)));
+	}	
+	margin-bottom: 30px;
+}
+
+.benefit__paragraph {
+	margin-bottom: 30px;
+}
+
+h5.benefit__title {
+	font-family: Arial;
+	font-weight: 900;
+	font-size: 25px;
+	@media (max-width: 1200px) {
+  		font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+	}	
+}
+
+.benefit__list {
+	padding-left: 40px;
+	margin-bottom: 40px;
+}
+
+h5.harm__title {
+	font-family: Arial;
+	font-weight: 900;
+	font-size: 25px;
+	@media (max-width: 1200px) {
+  		font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+	}	
+}
+
+.harm__list {
+	padding-left: 40px;
+	margin-bottom: 40px;
+}
+
+.harm__paragraph {
+	margin-bottom: 40px;
+}
+
+.popular {
+	padding: 70px 0 200px;
+	@media (max-width: 1200px) {
+		padding-top: calc(45px + (70 - 45) * ((100vw - 320px) / (1200 - 320)));
+  		padding-bottom: calc(100px + (200 - 100) * ((100vw - 320px) / (1200 - 320)));
+	}
+	& .section-title {
+		margin-bottom: 100px;
+		text-shadow: none;
+		&::after {
+			display: none;
+		}
+	}
+}
+
+.popular-slider.slick-initialized .slick-slide {
+	display: inline-block;
+}
+
+.popular-slider .carts__item {
+	margin-right: 40px;
+}

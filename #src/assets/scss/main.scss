@@ -1,0 +1,51 @@
+// --------vars and reboot--------
+
+@import "blocks/vars";
+@import "blocks/reboot";
+
+// --------libraries--------
+
+// @import "blocks/outside/animate";
+// @import "blocks/outside/slick";
+// @import "blocks/outside/bootstrap-grid.min";
+
+// --------fonts and specific--------
+
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff2") format("woff2"), url("../fonts/#{$file_name}.woff") format("woff");
+		font-weight: #{$weight};
+		font-style: #{$style}; }}
+@import "blocks/fonts";
+@import "blocks/specific";
+
+// ---------main css----------
+
+@import "blocks/burger";
+@import "blocks/preloader";
+@import "blocks/header-top";
+@import "blocks/header-nav";
+@import "blocks/header-slider";
+@import "blocks/slider-slick";
+@import "blocks/categories";
+@import "blocks/gift-slider";
+@import "blocks/our-shops";
+@import "blocks/about";
+@import "blocks/subscribe";
+@import "blocks/footer";
+@import "blocks/breadcrumbs";
+@import "blocks/shop";
+@import "blocks/pagination";
+@import "blocks/shop-info";
+@import "blocks/single";
+@import "blocks/modal";
+
+// -----------media-------------
+
+@import "blocks/media";
+
+// ---------IE styles-----------
+
+@import "blocks/IE";

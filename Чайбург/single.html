@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Food | Single</title>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Snippets -->
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевые слова">
+    <meta name="author" content="Автор">
+    <meta name="image" content="assets/img/base.png">
+    
+    <!-- OG Tags -->
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:description" content="Описание">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sitename.ru/images/meta">
+    <meta property="og:site_name" content="Название сайта">
+    <meta property="og:url" content="https://example.com">
+    
+    <link rel="canonical" href="https://example.com">
+    
+    <!-- <link rel="preconnect" href="//fonts.gstatic.com"> -->
+    <!-- <link rel="preconnect" href="//google-analytics.com"> -->
+    
+    <!-- Icon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="assets/img/icon/manifest.json"> -->
+    
+    <meta name="msapplication-TileImage" content="assets/img/icon/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <!-- <meta name="theme-color" content="#F1EADC"> -->
+    
+    <meta name="apple-mobile-web-app-title" content="Название иконки на рабочем столе">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    
+    <!-- CSS for IE --> <!-- условные коментарии -->
+    <!--[if IE 9]><html class="ie9"><![endif]-->
+    <!--[if IE 8]><html class="ie8"><![endif]-->
+    <!--[if IE 7]><html class="ie7"><![endif]--></head>
+
+<body>
+	
+	<div class="page">
+	    
+	    <div class="preloader-wrapper">
+	    	<span class="preloader"></span>
+	    </div>
+	    
+	    <header class="header" id="header">
+	    	<div class="container">
+	    		<div class="header-top jsHeaderTop">
+	    	        <a href="index.html" class="logo">
+	    	        	<img src="assets/img/icons/logo.svg" alt="Чайбург">
+	    	        </a>
+	    	        <form action="#" class="header-search">
+	    	        	<div class="header-search__title">
+	    	        		<img class="header-search__icon" src="assets/img/icons/point.svg" alt="point">
+	            			<span class="header-search__name">
+	            				Москва
+	            			</span>
+	    	        	</div>
+	    	        	<input type="text" class="header-search__field" placeholder="Поиск">
+	    	        	<img class="header-search__input-icon" src="assets/img/icons/search.svg" alt="search">
+	    	        </form>
+	    	        <div class="call-wrapper">
+	    		        <div class="header-top__contacts">
+	    		        	<a href="tel:88002506459" class="header-top__tel tel">	8 (800) 250-64-59
+	    		        	</a>
+	    		        	<a href="mailto:ishop@chayburg.ru" class="header-top__mail">
+	    		        		ishop@chayburg.ru
+	    		        	</a>
+	    		        </div>
+	    		        <button class="header-top__btn btn order-btn">
+	    		        	Заказать звонок
+	    		        </button>
+	    		    </div>
+	    		    <div class="order-wrapper jsMobile">
+	    		        <a href="#" class="header-top__cart">
+	    		        	<img src="assets/img/icons/cart.svg" alt="корзина">
+	    		        	<span class="cart-count">16</span>
+	    		        </a>
+	    		        <button type="button" class="burger">
+	    		            <span class="burger__top"></span>
+	    		            <span class="burger__middle"></span>
+	    		            <span class="burger__bottom"></span>
+	    		        </button>
+	    	        </div>
+	            </div>
+	    	</div><!-- /container -->
+	    	<nav class="menu jsFixedMenu">
+	    		<ul class="menu__list">
+	    			<li class="menu__item">
+	    				<a href="shop.html" class="menu__link">
+	    					Чай
+	    				</a>
+	    			</li>
+	    			<li class="menu__item">
+	    				<a href="shop.html" class="menu__link">
+	    					Аксессуары для кофе
+	    				</a>
+	    			</li>
+	    			<li class="menu__item">
+	    				<a href="shop.html" class="menu__link">
+	    					Кофе
+	    				</a>
+	    			</li>
+	    			<li class="menu__item">
+	    				<a href="shop.html" class="menu__link">
+	    					Сладости
+	    				</a>
+	    			</li>
+	    			<li class="menu__item">
+	    				<a href="shop.html" class="menu__link">
+	    					Аксессуары
+	    				</a>
+	    			</li>
+	    			<li class="menu__item">
+	    				<a href="shop.html" class="menu__link">
+	    					Подарки
+	    				</a>
+	    			</li>
+	    			<li class="menu__item">
+	    				<a href="shop.html" class="menu__link">
+	    					Хиты продаж
+	    				</a>
+	    			</li>
+	    			<li class="menu__item">
+	    				<a href="shop.html" class="menu__link">
+	    					Новинки
+	    				</a>
+	    			</li>
+	    		</ul>
+	    	</nav>
+	    </header>
+	    
+	    <main class="main">
+	    	
+	    	<div class="navigation">
+	    		<div class="container">
+	    			<div class="breadcrumbs">
+	    				<ul class="breadcrumbs__list">
+	    					<li class="breadcrumbs__item">
+	    						<a href="index.html" class="breadcrumbs__link">
+	    							Главная
+	    						</a>
+	    					</li>
+	    					<li class="breadcrumbs__item">
+	    						<a href="shop.html" class="breadcrumbs__link">
+	    							Чай
+	    						</a>
+	    					</li>
+	    					<li class="breadcrumbs__item">
+	    						<a href="single.html" class="breadcrumbs__link">
+	    							Классический черный
+	    						</a>
+	    					</li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	
+	    	<section class="single" id="single">
+	    		<div class="single__container container">
+	    			<h1 class="cart-title">
+	    				Цейлон Классический купаж черного чая
+	    			</h1>
+	    			<div class="single__wrapper">
+	    				<div class="single__inner">
+	    					<img src="assets/img/single.png" alt="ceylon" class="single__img">
+	    					<form action="#" class="single__form">
+	    						<span class="single__price">
+	    							408 руб
+	    						</span>
+	    						<select class="single__list">
+	    							<option>100г</option>
+	    							<option>350г</option>
+	    							<option>500г</option>
+	    						</select>
+	    						<div class="single__btns">
+	    							<button class="single__btn btn" type="submit">
+	    								В корзину
+	    							</button>
+	    							<a href="#" class="single__btn transparent-btn">
+	    								Купить в один клик
+	    							</a>
+	    						</div>
+	    					</form>
+	    				</div><!-- /single__inner -->
+	    				<div class="tabs-wrapper">
+	    					<div class="tabs">
+	    						<button type="button" class="tabs_btn active jsTabBtn" data-tab="1">
+	    							Описание
+	    						</button>
+	    						<button type="button" class="tabs_btn jsTabBtn" data-tab="2">
+	    							Отзывы
+	    						</button>
+	    					</div>
+	    					<div class="tabs-content">
+	    						<div class="tabs-content__item active jsTabContent" data-tab="1">
+	    							<p>
+	    								Купаж высокогорных сортов цейлонского чёрного чая. Только лучшие из лучших, будь то сорт, плантация, сбор, куст или лист. Элита цейлонского чая подарит традиционный крепкий напиток с терпким вкусом чернослива. Медовые отголоски смягчат послевкусие, а фруктовые мотивы дополнят и без того восхитительный аромат.
+	    							</p>
+	    							<p>
+	    								<span>Свойства:</span>
+	    								 цейлонский чай  помогает сбросить вес, улучшить состояние кожи и волос. Антиоксиданты в напитке  содержат соединения, известные как флавоноиды. Исследования показывают, что флавоноиды обладают многими преимуществами для здоровья, включая потерю веса.
+	    							</p>
+	    							<p>
+	    								<span>Состав:</span>
+	    								чай чёрный байховый крупный листовой (Цейлон).
+	    							</p>
+	    						</div>
+	    						<div class="tabs-content__item jsTabContent" data-tab="2">
+	    							<p>
+	    								Отзывы о товарах
+	    							</p>
+	    						</div>	
+	    					</div>
+	    				</div>
+	    			</div><!-- /single -->
+	    		</div>
+	    	</section>
+	    	
+	    	<section class="popular" id="popular">
+	    		<div class="container">
+	    			<h2 class="section-title">
+	    				Вас так же может заинтересовать
+	    			</h2>
+	    			<div class="gift-slider__wrapper carts-wrapper">
+	    				<div class="carts-wrapper__item">
+	    					<a href="single.html" class="carts-wrapper__link">
+	    						<img src="assets/img/cart/cart-1.png" alt="товар" class="carts-wrapper__img">
+	    					</a>
+	    					<h5 class="carts-wrapper__title">
+	    						Подарок “Оранж”
+	    					</h5>
+	    					<span class="carts-wrapper__price">
+	    						465 руб
+	    					</span>
+	    					<button class="carts-wrapper__btn btn" type="button">
+	    						В корзину
+	    					</button>
+	    				</div>
+	    				<div class="carts-wrapper__item">
+	    					<a href="single.html" class="carts-wrapper__link">
+	    						<img src="assets/img/cart/cart-2.png" alt="товар" class="carts-wrapper__img">
+	    					</a>
+	    					<h5 class="carts-wrapper__title">
+	    						Подарок “Джулия”
+	    					</h5>
+	    					<span class="carts-wrapper__price">
+	    						3984 руб
+	    					</span>
+	    					<button class="carts-wrapper__btn btn" type="button">
+	    						В корзину
+	    					</button>
+	    				</div>
+	    				<div class="carts-wrapper__item">
+	    					<a href="single.html" class="carts-wrapper__link">
+	    						<img src="assets/img/cart/cart-3.png" alt="товар" class="carts-wrapper__img">
+	    					</a>
+	    					<h5 class="carts-wrapper__title">
+	    						Подарок “Утреняя заря”
+	    					</h5>
+	    					<span class="carts-wrapper__price">
+	    						1088 руб
+	    					</span>
+	    					<button class="carts-wrapper__btn btn" type="button">
+	    						В корзину
+	    					</button>
+	    				</div>
+	    				<div class="carts-wrapper__item">
+	    					<a href="single.html" class="carts-wrapper__link">
+	    						<img src="assets/img/cart/cart-1.png" alt="товар" class="carts-wrapper__img">
+	    					</a>
+	    					<h5 class="carts-wrapper__title">
+	    						Подарок “Оранж”
+	    					</h5>
+	    					<span class="carts-wrapper__price">
+	    						465 руб
+	    					</span>
+	    					<button class="carts-wrapper__btn btn" type="button">
+	    						В корзину
+	    					</button>
+	    				</div>
+	    				<div class="carts-wrapper__item">
+	    					<a href="single.html" class="carts-wrapper__link">
+	    						<img src="assets/img/cart/cart-2.png" alt="товар" class="carts-wrapper__img">
+	    					</a>
+	    					<h5 class="carts-wrapper__title">
+	    						Подарок “Джулия”
+	    					</h5>
+	    					<span class="carts-wrapper__price">
+	    						3984 руб
+	    					</span>
+	    					<button class="carts-wrapper__btn btn" type="button">
+	    						В корзину
+	    					</button>
+	    				</div>
+	    				<div class="carts-wrapper__item">
+	    					<a href="single.html" class="carts-wrapper__link">
+	    						<img src="assets/img/cart/cart-3.png" alt="товар" class="carts-wrapper__img">
+	    					</a>
+	    					<h5 class="carts-wrapper__title">
+	    						Подарок “Утреняя заря”
+	    					</h5>
+	    					<span class="carts-wrapper__price">
+	    						1088 руб
+	    					</span>
+	    					<button class="carts-wrapper__btn btn" type="button">
+	    						В корзину
+	    					</button>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</section>
+	    </main>
+	    <footer class="footer" id="footer">
+	    	<div class="footer__container container">
+	    		<div class="footer-inner">
+	    			<ul class="footer-nav">
+	    				<li class="footer-nav__item"> 
+	    					<a href="#" class="footer-nav__title footer-nav__title--company">
+	    						Компания
+	    					</a>
+	    					<ul class="footer-subnav">
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Контакты
+	    							</a>
+	    						</li>
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Новости
+	    							</a>
+	    						</li>
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Магазины
+	    							</a>
+	    						</li>
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Акции
+	    							</a>
+	    						</li>
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Лояльность
+	    							</a>
+	    						</li>
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Франшиза
+	    							</a>
+	    						</li>
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Подарочные карты
+	    							</a>
+	    						</li>
+	    					</ul>
+	    				</li>
+	    				<li class="footer-nav__item">
+	    					<a href="#" class="footer-nav__title footer-nav__title--help">
+	    						Помощь
+	    					</a> 
+	    					<ul class="footer-subnav">
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Оплата
+	    							</a>
+	    						</li>
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Доставка
+	    							</a>
+	    						</li>
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Возврат
+	    							</a>
+	    						</li>
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Адрес бутиков
+	    							</a>
+	    						</li>
+	    					</ul>
+	    				</li>
+	    				<li class="footer-nav__item">
+	    					<a href="#" class="footer-nav__title">
+	    						Информация
+	    					</a>  
+	    					<ul class="footer-subnav">
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Статьи
+	    							</a>
+	    						</li>
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Вопрос-ответ
+	    							</a>
+	    						</li>
+	    						<li class="footer-subnav__item">
+	    							<a href="#" class="footer-subnav__link">
+	    								Производители
+	    							</a>
+	    						</li>
+	    					</ul>
+	    				</li>
+	    			</ul>
+	    			<div class="footer-info">
+	    				<div class="footer-info__contacts">
+	    		        	<a href="tel:88002506459" class="footer-info__tel tel">	8 (800) 250-64-59
+	    		        	</a>
+	    		        	<a href="mailto:ishop@chayburg.ru" class="footer-info__mail">
+	    		        		ishop@chayburg.ru
+	    		        	</a>
+	    		        </div>
+	    		        <button class="footer-info__btn btn order-btn">
+	    		        	Заказать звонок
+	    		        </button>
+	    			</div>
+	    		</div>
+	    	</div><!-- /container -->
+	    </footer>    </div>
+    
+    
+    
+    <!-- modal -->
+    
+    <div class="modal-wrapper" id="contactform">
+        <div class="modal-window" id="modalWindow">
+            <form action="#" id="modalForm" class="form-book js-form">
+                <h3 class="modal-window__title">
+                    Заказать звонок
+                </h3>
+                <input type="text" class="form-book__input" name="firstName" placeholder="Имя"
+                    required>
+                <input type="tel" id="phone" class="form-book__input" name="phoneNumber" placeholder="Телефон" required>
+                <label class="modal-checkbox">
+    				<input class="modal-checkbox__real" type="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;">
+    				<span class="modal-checkbox__fake"></span>
+    				<span class="modal-checkbox__title">
+    					Я согласен с обработкой 
+    					<a href="#">персональных данных</a>
+    				</span>
+    			</label>
+    			<button type="submit" id="submit" disabled="disabled" class="btn modal-order-btn select-btn" data-submit>  
+    				Отправить
+                </button>
+            </form>
+            <button type="button" id="modal-close-btn" class="modal-close-btn select-btn" data-submit>
+                <img src="assets/img/icons/close-btn.svg" alt="close btn">
+            </button>
+        </div>
+        <div class="thanks-window">
+            <h3 class="thanks-window__title">
+                Отлично! Мы скоро вам перезвоним.
+            </h3>
+            <button type="button" class="transparent-btn transparent-btn_thanks">
+                Закрыть
+            </button>
+        </div>
+        <div class="thanks-window-subscribe">
+            <h3 class="thanks-window__title">
+                Спасибо
+            </h3>
+            <button type="button" class="transparent-btn transparent-btn_thanks">
+                Закрыть
+            </button>
+        </div>
+    </div>
+    
+    <!-- back to up -->
+    
+    <div class="back-to-top">
+    	<a href="#"><i class="fas fa-level-up"></i></a>
+    </div>
+    
+    
+    <!-- scripts -->
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

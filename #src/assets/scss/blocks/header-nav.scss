@@ -1,0 +1,82 @@
+.menu {
+	background: $color-1;
+	padding: 0 15px;
+	&__list {
+		list-style-type: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+.header {
+	padding-bottom: 35px;
+	@media (max-width: 1200px) {
+		padding-bottom: calc(15px + (35 - 15) * ((100vw - 320px) / (1200 - 320)));
+	}
+	position: relative;
+}
+
+.menu__link {
+	white-space: nowrap;
+}
+
+.menu__list {
+	display: flex;
+	justify-content: center;
+	& li+li {
+		margin-left: 75px;
+	}
+	& a {
+		color: #fff;
+		display: inline-block;
+		font-size: 20px;
+		font-family: Ubuntu;
+		font-weight: 500;
+		padding: 28px 0;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			background: #fff;
+			width: 0;
+			height: 2px;
+			left: auto;
+			right: 0;
+			bottom: 20px;
+			transition: all .4s ease;
+		}
+		&:hover::before {
+			width: 100%;
+		    right: auto;
+		    left: 0;
+		}
+	}
+}
+
+.compensation {
+	margin-bottom: 80px;
+}
+
+.nav-fixed {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 1001;
+	animation-name: header-fixed;
+	animation-duration: 1s;
+}
+
+
+@keyframes header-fixed {
+	0% {
+		opacity: 0;
+		top: -80px;
+	}
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
+

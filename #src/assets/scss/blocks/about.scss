@@ -1,0 +1,103 @@
+.about {
+	padding: 100px 0 100px;
+	@media (max-width: 1200px) {
+  		padding-bottom: calc(50px + (100 - 50) * ((100vw - 320px) / (1200 - 320)));
+		padding-top: calc(50px + (100 - 50) * ((100vw - 320px) / (1200 - 320)));
+	}
+	z-index: 20;
+	position: relative;
+		&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 56%;
+    	top: 6%;
+		min-height: 600px;
+		width: 100%;
+		background-color: $color-7;
+	}	
+	& .container::after {
+		content: "";
+		display: block;
+		position: absolute;
+		right: 15px;
+    	top: 5.5%;
+		height: 438px;
+		width: 620px;
+		background: url(../img/about.png);
+		z-index: 2;
+	}
+	& .section-title {
+		text-align: left;
+		&::after {
+			left: 30%;
+			width: 350px;
+			@media (max-width: 1200px) {
+  				width: calc(250px + (350 - 250) * ((100vw - 320px) / (1200 - 320)));
+			}	
+		}
+	}
+}
+
+.about__wrapper {
+	position: relative;
+	z-index: 100;
+}
+
+.about {
+	&__info {
+		max-width: 630px;
+		font-family: Arial;
+		font-weight: 400;
+		font-size: 25px;
+		@media (max-width: 1200px) {
+  			font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1200 - 320)));
+		}	
+		margin-bottom: 50px;
+		text-align: left;
+		&:last-child {
+			max-width: 100%;
+			text-align-last: left;
+		}
+	}
+	&__item {
+		width: 101%;
+	}
+	&__title {
+		font-size: 30px;
+		@media (max-width: 1200px) {
+  			font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+		}
+		font-family: Ubuntu;
+		font-weight: 500;
+		margin-top: 60px;
+		margin-bottom: 30px;
+		&--list {
+			font-family: Arial;
+			font-weight: 400;
+			font-size: 25px;
+			@media (max-width: 1200px) {
+  				font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1200 - 320)));
+			}
+			& span {
+				font-family: Arial;
+				font-weight: 900;
+				font-size: 25px;
+				@media (max-width: 1200px) {
+  					font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1200 - 320)));
+				}
+			}
+		}
+	}
+	&__list {
+		margin-bottom: 70px;
+		font-family: Arial;
+		font-weight: 400;
+		font-size: 25px;
+		@media (max-width: 1200px) {
+  			font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1200 - 320)));
+		}
+		padding-left: 37px;
+		
+	}
+}

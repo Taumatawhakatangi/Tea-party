@@ -1,0 +1,107 @@
+.gift-slider {
+	padding: 100px 0 100px;
+	@media (max-width: 1200px) {
+		padding-top: calc(40px + (100 - 40) * ((100vw - 320px) / (1200 - 320)));
+  		padding-bottom: calc(70px + (100 - 70) * ((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+.carts-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	&__item {
+		width: 33%;
+		max-width: 400px;
+		height: 577px;
+		@media (max-width: 418px) {
+			height: calc(480px + (577 - 480) * ((100vw - 320px) / (418 - 320)));
+		}	
+		display: inline-block;
+		text-align: center;
+		border: 2px solid $color-6;
+		transition: all .4s ease;
+		&:hover {
+			box-shadow: 3px 3px 20px rgb(50 50 50 / 25%);
+		}
+	}
+	&__title {
+		font-size: 25px;
+		@media (max-width: 1200px) {
+  			font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1200 - 320)));
+		}
+		font-family: Ubuntu;
+		font-weight: 500;
+		margin-bottom: 20px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		padding: 0 20px;
+	}
+	&__price {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 350px;
+		display: block;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $color-6;
+		font-family: Ubuntu;
+		font-weight: 500;
+		font-style: italic;
+	}
+	&__btn {
+		margin: 0 auto;
+	}
+	&__link {
+		display: inline-block;
+		margin-bottom: 30px;
+		height: 290px;
+		@media (max-width: 418px) {
+			height: calc(230px + (290 - 230) * ((100vw - 320px) / (418 - 320)));
+		}
+	}
+	&__img {
+		max-height: 290px;
+		overflow: hidden;
+	}
+}
+
+.carts-wrapper__item .slick-slide .slick-active {
+	width: 400px;
+}
+
+.carts-wrapper__item .slick-slide .slick-current .slick-active {
+	width: 400px;
+}
+
+.carts-wrapper__btn-prev {
+	left: -3%;
+	top: 50%;
+}
+
+.carts-wrapper__btn-next {
+	right: -3%;
+	top: 50%;
+}
+
+.slick-track {
+	justify-content: center;
+}
+
+.slick-prev .slick-arrow {
+	position: absolute;
+}
+
+.slick-next .slick-arrow {
+	position: absolute;
+}
+
+.gift-slider__wrapper.slick-initialized .slick-slide {
+	display: inline-block;
+}
+
+.gift-slider__wrapper .carts-wrapper__item:not(:last-of-type) {
+	margin-right: 40px;
+}

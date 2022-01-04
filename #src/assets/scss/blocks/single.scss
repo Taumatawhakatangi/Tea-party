@@ -1,0 +1,136 @@
+.single {
+	padding: 30px 0 70px;
+}
+
+.cart-title {
+	max-width: 620px;
+	padding-bottom: 70px;
+	font-family: Ubuntu;
+	font-weight: bold;
+	font-size: 40px;
+	@media (max-width: 1200px) {
+  		font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (1200 - 320)));
+	}	
+}
+
+.single {
+	&__inner {
+		display: flex;
+		margin-bottom: 50px;
+	}
+	&__img {
+		margin-right: 150px;
+		max-width: 510px;
+		max-height: 510px;
+	}
+	&__form {
+		padding-top: 27px;
+		padding-right: 15px;
+		padding-left: 28px;
+		width: 470px;
+		transition: all .4s ease;
+		&:hover {
+			box-shadow: rgb(50 50 50 / 25%) 3px 3px 20px;
+		}
+	}
+	&__price {
+		display: block;
+		font-family: Ubuntu;
+		font-style: italic;
+		font-weight: 500;
+		font-size: 40px;
+		@media (max-width: 1200px) {
+  			font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320)));
+		}	
+		margin-bottom: 70px;
+	}
+	&__list {
+		caret-color: transparent;
+		display: inline-block;
+		width: 223px;
+		border: 1px solid $color-4;
+		color: $color-1;
+		padding: 16px;
+		font-family: Arial;
+		font-size: 25px;
+		@media (max-width: 1200px) {
+  			font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1200 - 320)));
+		}
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background: url('../img/icons/select.svg') no-repeat right center;
+		outline: 0;
+		margin-bottom: 90px;
+	}
+	&__btns {
+		display: flex;
+		max-width: 470px;
+	}
+}
+
+/* CAUTION: IE hackery ahead */
+select::-ms-expand { 
+    display: none; /* remove default arrow on ie10 and ie11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background: none\9;
+        padding: 5px\9;
+    } 
+}
+
+input[list]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.single__btn:not(:last-child) {
+	margin-right: 40px;
+}
+
+.single__btn.transparent-btn {
+	max-width: 207px;
+}
+
+.tabs_btn {
+	padding: 15px 20px;
+	font-family: Ubuntu;
+	font-weight: 500;
+	font-size: 30px;
+	@media (max-width: 1200px) {
+  		font-size: calc(25px + (30 - 25) * ((100vw - 320px) / (1200 - 320)));
+	}
+	color: $color-1;
+	&:not(:last-of-type) {
+		margin-right: 40px;
+	}
+}
+
+.tabs {
+	margin-bottom: 30px;
+}
+
+.tabs-wrapper {
+	min-height: 360px;
+}
+
+.tabs-content__item {
+	display: none;
+}
+
+.tabs-content__item.active {
+	display: block;
+}
+
+.tabs-content__item span {
+	font-family: Arial;
+	font-weight: 900;
+}
+
+.tabs_btn.active {
+	color: $color-4;
+	border-bottom: 1px solid $color-4;
+}

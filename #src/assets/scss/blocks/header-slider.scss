@@ -1,0 +1,90 @@
+.header-slider {
+	padding: 35px 0 85px;
+	@media (max-width: 1200px) {
+		padding-bottom: calc(40px + (85 - 40) * ((100vw - 320px) / (1200 - 320)));
+		padding-top: calc(15px + (35 - 15) * ((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+.slider {
+	position: relative;
+}
+
+.slider__item {
+	display: flex;
+	align-items: center;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.slider-btns {
+	position: absolute;
+	opacity: 0.7;
+	transition: all .4s ease;
+	z-index: 100;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.slider__img {
+	max-width: 840px;
+	max-height: 400px;
+	overflow: hidden;
+}
+
+.slider__btn-prev {
+	left: -3.5%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}
+
+.slider__btn-next {
+	right: -7.5%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}
+
+.slider__current-numb {
+	position: absolute;
+	background-color: $color-2;
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: 40px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	@media (max-width: 1200px) {
+		width: calc(70px + (100 - 70) * ((100vw - 320px) / (1200 - 320)));
+		height: calc(70px + (100 - 70) * ((100vw - 320px) / (1200 - 320)));
+		font-size: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320)));
+		line-height: calc(70px + (100 - 70) * ((100vw - 320px) / (1200 - 320)));
+	}
+	text-align: center;
+	bottom: 0%;
+    left: 3.3%;
+    z-index: 30;
+}
+
+.slider__title {
+	font-family: Ubuntu;
+	font-weight: 700;
+	font-size: 30px;
+	max-width: 396px;
+	margin-bottom: 30px;
+	@media (max-width: 1200px) {
+		font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+	}
+}
+
+.slider__offer {
+	position: absolute;
+	top: 9%;
+	right: 3px;
+	background-color: $color-2;
+	padding: 60px 70px 70px 70px;
+	z-index: 100;
+}
+

@@ -1,0 +1,11 @@
+.ie9 body {
+	background-color: green;
+}
+
+// медизапрос специально для IE. Данные стили применяются только для IE
+
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .jsMobile .burger {
+        padding-right: 60px;
+    }	
+}

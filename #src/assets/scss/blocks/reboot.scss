@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+ul, li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0; 
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+	transition: all .5s ease;
+}
+
+button, input, textarea, select {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-family: inherit;
+	padding: 0;
+}
+
+label, img {
+	user-select: none;
+}
+
+button {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	transition: all .5s ease;
+}
+
+input {
+	width: 100%;
+	border-radius: 0;
+	box-sizing: border-box;
+	box-shadow: none;
+	border: 1px solid transparent;
+}
+
+textarea {
+	resize: none;
+}
+

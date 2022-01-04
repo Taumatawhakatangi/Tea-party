@@ -1,0 +1,16 @@
+.slick-list {
+	overflow: hidden;
+}
+
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+	z-index: 10;
+	min-height: 450px;
+}
+
+.slick-initialized .slick-slide {
+	display: flex;
+}
+
+

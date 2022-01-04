@@ -1,0 +1,61 @@
+
+
+<!-- modal -->
+
+<div class="modal-wrapper" id="contactform">
+    <div class="modal-window" id="modalWindow">
+        <form action="#" id="modalForm" class="form-book js-form">
+            <h3 class="modal-window__title">
+                Заказать звонок
+            </h3>
+            <input type="text" class="form-book__input" name="firstName" placeholder="Имя"
+                required>
+            <input type="tel" id="phone" class="form-book__input" name="phoneNumber" placeholder="Телефон" required>
+            <label class="modal-checkbox">
+				<input class="modal-checkbox__real" type="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;">
+				<span class="modal-checkbox__fake"></span>
+				<span class="modal-checkbox__title">
+					Я согласен с обработкой 
+					<a href="#">персональных данных</a>
+				</span>
+			</label>
+			<button type="submit" id="submit" disabled="disabled" class="btn modal-order-btn select-btn" data-submit>  
+				Отправить
+            </button>
+        </form>
+        <button type="button" id="modal-close-btn" class="modal-close-btn select-btn" data-submit>
+            <img src="assets/img/icons/close-btn.svg" alt="close btn">
+        </button>
+    </div>
+    <div class="thanks-window">
+        <h3 class="thanks-window__title">
+            Отлично! Мы скоро вам перезвоним.
+        </h3>
+        <button type="button" class="transparent-btn transparent-btn_thanks">
+            Закрыть
+        </button>
+    </div>
+    <div class="thanks-window-subscribe">
+        <h3 class="thanks-window__title">
+            Спасибо
+        </h3>
+        <button type="button" class="transparent-btn transparent-btn_thanks">
+            Закрыть
+        </button>
+    </div>
+</div>
+
+<!-- back to up -->
+
+<div class="back-to-top">
+	<a href="#"><i class="fas fa-level-up"></i></a>
+</div>
+
+
+<!-- scripts -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+<script src="assets/js/main.js"></script>
+
